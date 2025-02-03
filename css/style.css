@@ -1,0 +1,109 @@
+:root{
+
+    /* Font Family  */
+
+    --main-font: "PT Sans Caption", sans-serif;
+    --primary-font:"Pacifico", cursive;
+    --secondery-font: "Righteous", sans-serif;
+
+}
+
+.text-font{
+    font-family: var(--main-font);
+}
+
+body{
+
+    background-color: #F7ECDE;
+}
+
+
+h1{
+    font-family: var(--primary-font);
+    font-size: 50px;
+}
+
+h1::before{
+
+content: "";
+position: absolute;
+width: 20%;
+display: block;
+height: 25%;
+background-color: #FEC260;
+bottom: 8%;
+left: 40%;
+z-index: -1;
+transition: height 350ms;
+
+}
+
+
+h1:hover::before{
+
+height: 65%;
+
+
+}
+
+.text-ditiles::after {
+    content: "";
+    position: absolute;
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+    border-color: black;
+    top: 30%;
+    left: 2%;
+    width:100%;
+
+   
+
+}
+
+.ditiles p {
+    font-family: var(--secondery-font);
+    background: linear-gradient(90deg, #79b613 59%, rgb(202, 216, 91) 97%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+   
+
+}
+
+.ditiles i{
+    color: #79b613;
+    font-size: 1.5625rem;
+    
+}
+
+/* 
+.inputs .form-control:focus{
+
+    border-color: #d99c39 !important;
+ box-shadow: 0 0 0 0.25rem #fec26055 !important;
+
+ }   */
+
+
+ .text-ditiles::before {
+    content: "";
+    position: absolute;
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+    border-color: black;
+    bottom: -250%;
+    left: 2%;
+    width:100%;
+
+   
+
+}
+
+
+.info .one {
+
+    background-color: #79b613 !important;
+    color: #fff !important;
+    
+}
+

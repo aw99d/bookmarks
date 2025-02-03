@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark </title>
+
+    <!-- Font Google (Pacifico , Righteous ,PT Sans Caption) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- BootStrap  -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- Style Css  -->
+      <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<section class="hrader mt-5">
+<div class="container position-relative ">
+<h1 class="text-center">
+ Bookmarker
+
+</h1>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+<section class="ditiles mt-5 position-relative">
+<div class="container">
+
+<div class="d-flex gap-2 justify-content-center align-items-center pt-5 position-relative">
+
+    <i class= "text-ditiles "></i>
+
+    <i class="fa-solid fa-bookmark"></i>
+    <p class=" mt-3">
+        Bookmark your favorite sites 
+    </p>
+
+    <i class=" fa-solid fa-bookmark"></i>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+<section class="inputs mt-5">
+<div class="container">
+    <div class="mb-3">
+        <i class="fs-6  fa-solid fa-book-bookmark pla"></i>
+        <label for="name"  class="form-label">SiteName</label>
+        
+        <input type="text" class="form-control" id="name" oninput="validate(regexName , nameInput)" placeholder="Bookmark Name">
+      </div>
+      <div class="mb-3">
+        <i class="fs-6 fa-solid fa-link"></i>
+        <label for="suteWeb" class="form-label">
+            Site URL</label>
+        <input type="text" class="form-control text-uppercase" id="siteWeb" oninput="validate(regexSiteWeb , siteWebName)" placeholder="Website Url">
+
+<div class="d-flex justify-content-center align-items-center mt-3">
+    
+    <button id="addBtn" type="button" class="btn btn-danger py-2 px-5" onclick="addInfo()"> Submit</button>
+    <button id="updateBtn" type="button" class="btn btn-primary py-2 px-5 mx-2 d-none" onclick="updateInfo()"> Update </button>
+
+    
+</div>
+
+      </div>
+
+
+      <div class="mt-5">
+
+        <div class="container">
+    
+    
+            <i class="fs-6 fa-brands fa-searchengin"></i>
+            <label for="search"  class="form-label">Search</label>
+            
+            <input type="search" class="form-control" id="search" oninput="searchName()" placeholder="Search For Site">
+        </div>
+     
+      </div>
+    
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+<section class="info mt-5 text-font">
+
+<div class="container">
+
+
+    <table class="table mt-4 text-center bg-light">
+        <thead>
+          <th class="text-capitalize">index</th>
+          <th class="text-capitalize">Website Name</th>
+          <th class="text-capitalize">Visit</th>
+          <th class="text-capitalize">Delete</th>
+          <th class="text-capitalize">Update</th>
+        </thead>
+        <tbody id="tableInfo" >
+            
+
+        </tbody>
+        
+      </table>
+</div>
+
+</section>
+
+
+
+
+<script src="./js/index.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body>
+    
+</body>
+
+
